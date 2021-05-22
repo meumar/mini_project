@@ -1,0 +1,109 @@
+<html>
+<head>
+  <title>Donate Red</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      position: absolute;
+      top: 150px;
+      left: 350px;
+    }
+    th{
+      height: 50px;
+      background-color: #ff4d4d;
+    }
+    tr{
+            text-align: center;
+            border: 0.5px solid white;
+            height: 30px;
+            background-color:  #ffe6e6;
+
+    }
+    tr:hover{
+      background-color: #ff9999;
+    }
+  </style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <div class="d1">
+  <link rel="stylesheet" href="stylesdonor.css">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="logo.jpg" style="width:45px;height:60px; position: absolute; left:54px;top:20px;">
+  <a href="home.php"><b>Donate Red</b></a>
+  <div class="dm">
+  <div class="d2" align="center">
+    <br>
+    <a class="a1" href="donors.php" target="_top">Search Donors</a>
+  </div>
+  <div class="d3" align="center">
+    <br>
+    <a class="a2" href="bloodbanks.php">Blood Banks</a>
+  </div>
+  <div class="d4" align="center">
+    <br>
+    <a class="a3" href="add.php">Ad for blood</a>
+  </div>
+  <div class="d5" align="center">
+    <br>
+    <a class="a4" href="donate.php">Donate blood</a>
+  </div>
+  <div class="d6" align="center">
+    <br>
+    <a class="a5" href="Aboutus.php">About us</a>
+  </div>
+  <div class="d7" align="center">
+    <br>
+    <a class="a6" href="Contactus.php">Contact us</a>
+  </div>
+</div>
+  </div>
+  <div class="cal" style="position: absolute;
+  top: 0px;
+  left: 900px;">
+  <p class="call" style="font-family: Arial, Helvetica, sans-serif; font-size:20px;" > &#9743; &nbsp;Emergency:xxxxxxxxx</p>
+  </div>
+</head>
+<body>
+  <footer>
+  <p style="color: white">&copy; 2020 Donate Red <p>
+  <section id="lab_social_icon_footer">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container">
+        <div class="text-center center-block" align="center">
+                <a href="https://www.facebook.com"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+              <a href="https://twitter.com"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+              <a href="https://plus.google.com"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+              <a href="mailto:#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+    </div>
+</div>
+</section>
+</footer>
+<?php
+$conn = new mysqli("localhost","root","","db1");
+if($conn -> connect_error){
+  die("connection failed".$conn -> connect_error);
+}
+$sql = "SELECT nmd,phd,addd FROM donate";
+echo '<table width="500" > 
+      <tr> 
+          <th> <font face="Arial" color="white">Name</font> </th>
+          <th> <font face="Arial" color="white">Phone number</font> </th> 
+          <th> <font face="Arial" color="white">Details</font> </th> 
+      </tr>';
+$result = $conn -> query($sql);
+if($result -> num_rows > 0){
+  while($row = $result -> fetch_assoc()){
+    $field1name = $row['nmd'];
+    $field2name = $row['phd'];
+    $field3name = $row['addd'];
+     echo '<tr> 
+                  <td>'.$field1name.'</td> 
+                  <td>'.$field2name.'</td> 
+                  <td>'.$field3name.'</td> 
+          </tr>';
+  }
+    echo '</table>';
+}
+$conn-> close();
+?>
+	
+</body>
+</html>

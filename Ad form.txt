@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head><blink><u>NEED FOR BLOOD</u></blink>
+<style>
+	blink{
+		font-family: Arial, Helvetica, sans-serif;
+		animation: blinker 0.6s linear infinite;
+      	color: red;
+      	font-size: 30px;
+      	font-weight: bold;
+      	font-family: sans-serif;  	
+		}
+	@keyframes blinker 
+	{  
+      50% { opacity: 0; }
+      }
+</style>
+</head>
+<body>
+
+<?php
+$conn = new mysqli("localhost","root","","db1");
+if($conn -> connect_error){
+	die("connection failed".$conn -> connect_error);
+}
+$sql = "SELECT bgroup, cphone, details, comments FROM ad";
+echo '<table border="0" cellspacing="2" cellpadding="2"> 
+      <tr> 
+          <td> <font face="Arial" color="blue">Blood Group</font> </td> 
+          <td> <font face="Arial" color="blue">Phone Number</font> </td> 
+          <td> <font face="Arial" color="blue">Details</font> </td> 
+          <td> <font face="Arial" color="blue">comments</font> </td> 
+      </tr>';
+$result = $conn -> query($sql);
+if($result -> num_rows > 0){
+	while($row = $result -> fetch_assoc()){
+		$field1name = $row['bgroup'];
+		$field2name = $row['cphone'];
+		$field3name = $row['details'];
+		$field4name = $row['comments'];
+		 echo '<tr> 
+                  <td>'.$field1name.'</td> 
+                  <td>'.$field2name.'</td> 
+                  <td>'.$field3name.'</td> 
+                  <td>'.$field4name.'</td> 
+               </tr>';
+	}
+
+}
+$conn-> close();
+?>
+</body>
+</html>

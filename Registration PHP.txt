@@ -1,0 +1,33 @@
+<?php
+$futureDate = mktime(date("h"),date("i"),date("s"),date("m")+3,date("d"),date("Y"));
+$fut = date("d/m/Y h/i/s", $futureDate);
+$fname = $_POST['fname'];
+$lname = $_POST['lname'];
+$rphone = isset($_POST['rphone']) ? $_POST['rphone'] : '';
+if (!filter_var($rphone, FILTER_VALIDATE_EMAIL)) {
+  echo "Invalid email format";
+}
+else{
+$npass = $_POST['npass'];
+$bday = $_POST['bday'];
+$gender = isset($_POST['end']) ? $_POST['end'] : '';
+$res = mail("$rphone", "Donate Red", "HELLO $fname, you are successfully registered on DONATE RED site.");
+$conn = new mysqli("localhost", "root", "", "db1");
+if($conn->connect_error)
+{
+  die("connection failed".$conn->connect_error);
+}
+echo "connection successfully";
+$sql = "INSERT INTO user (fname,lname,password,phone,bdate,gender,time) values ('$fname','$lname','$npass','$rphone','$bday','$gender','$fut')";
+if ($conn->query($sql)==TRUE)
+{
+  header('Location:home.php');
+}
+else
+{
+  echo "error". $sql."<br>".$conn->error;
+}
+$conn-> close();
+}
+?>
+

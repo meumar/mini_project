@@ -1,0 +1,28 @@
+<?php
+$timestamp = time();
+$pre = date("d/m/Y h/i/s", $timestamp);
+$headers  = 'MIME-Version: 1.0' . "\r\n";
+$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+echo $pre;
+
+
+$conn = new mysqli("localhost","root","","db1");
+if($conn->connect_error){
+	die("connection failed".$conn->connect_error);
+}
+$sql = "SELECT phone, time FROM user";
+$result = $conn->query($sql);
+if($result -> num_rows > 0)
+{
+	while($row = $result -> fetch_assoc())
+	{	
+		if($row['time'] == $pre){
+			$mail = $row['phone'];
+			$res = mail ("$mail","Donate Red","Dear donor,Its been three months.If you wish you can donate blood again and save another life.Thank you","$headers");
+		}
+
+		
+	}
+}
+$conn-> close();
+?>

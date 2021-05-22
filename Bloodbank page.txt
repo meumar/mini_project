@@ -1,0 +1,191 @@
+<html>
+<head>
+  <title>Donate Red</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <div class="d1">
+  <link rel="stylesheet" href="stylesdonor.css">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="logo.jpg" style="width:45px;height:60px; position: absolute; left:54px;top:20px;">
+  <a href="home.php"><b>Donate Red</b></a>
+  <div class="dm">
+  <div class="d2" align="center">
+    <br>
+    <a class="a1" href="donors.php" target="_top">Search Donors</a>
+  </div>
+  <div class="d3" align="center">
+    <br>
+    <a class="a2" href="bloodbanks.php">Blood Banks</a>
+  </div>
+  <div class="d4" align="center">
+    <br>
+    <a class="a3" href="add.php">Ad for blood</a>
+  </div>
+  <div class="d5" align="center">
+    <br>
+    <a class="a4" href="donate.php">Donate blood</a>
+  </div>
+  <div class="d6" align="center">
+    <br>
+    <a class="a5" href="Aboutus.php">About us</a>
+  </div>
+  <div class="d7" align="center">
+    <br>
+    <a class="a6" href="Contactus.php">Contact us</a>
+  </div>
+
+</div>
+  </div>
+  <div class="cal" style="position: absolute;
+  top: 0px;
+  left: 900px;">
+  <p class="call" style="font-family: Arial, Helvetica, sans-serif; font-size:20px;" > &#9743; &nbsp;Emergency:xxxxxxxxx</p>
+  </div>
+  <script>
+    function a(){
+      window.location.href = 'https://www.google.com/maps/dir//Vijaya+Sri+Blood+Bank,+%2329-19-27+opp+:andhra+bank+%26HDFC+bank+ATMS,+Dornakal+Rd,+Suryaraopeta,+Andhra+Pradesh+520002/@16.5128556,80.6335076,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3a35fab1403de667:0xabfb88ac4f59cfc3!2m2!1d80.6356963!2d16.5128556';
+    }
+    function b(){
+      window.location.href = 'https://www.google.com/maps/dir//1st+floor,+Chaitanya+Blood+Bank+with+Components,+Vasavya+Complex,+Benz+Cir,+Gurunanak+Nagar,+K+P+Nagar,+Vasavya+Nagar,+Vijayawada,+Andhra+Pradesh+520010/@16.4987585,80.6531745,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3a35fac762f2ddbf:0x8aa713c49a994bcf!2m2!1d80.6553632!2d16.4987585';
+    }
+    function c(){
+      window.location.href = 'https://www.google.com/maps/dir//Lion+Blood+Bank,+Ramchandrarao+Road,+Suryaraopeth,+Suryaraopeth,+Vijayawada,+Andhra+Pradesh+520002/@16.5082435,80.6358894,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3a35fab1403de667:0xff5a7ea9cf3daf09!2m2!1d80.6480229!2d16.5061786';
+    }
+  </script>
+  <style>
+    div.a1{
+      background-color: #ff4d4d; 
+      width: 300px;
+      height: 250px;
+      position: absolute;
+      top: 200px;
+      left: 50px;
+      border-radius: 15px;
+      box-shadow: 10px 10px 5px grey;
+    }
+    div.a2{
+      background-color: #ff4d4d; 
+      width: 300px;
+      height: 250px;
+      position: absolute;
+      top: 200px;
+      left: 480px;
+      border-radius: 15px;
+      box-shadow: 10px 10px 5px grey;
+    }
+    div.a3{
+      background-color: #ff4d4d; 
+      width: 300px;
+      height: 250px;
+      position: absolute;
+      top: 200px;
+      left: 900px;
+      border-radius: 15px;
+      box-shadow: 10px 10px 5px grey;
+    }
+    div.a1:hover{
+      padding: 10px;
+    }
+     div.a2:hover{
+      padding: 10px;
+    }
+     div.a3:hover{
+      padding: 10px;
+    }
+    p.b1{
+      position: absolute;
+      top: 100px;
+      left: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 28px;
+    }p.b2{
+      position: absolute;
+      top: 150px;
+      left: 25px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    i.material-icons{
+      position: absolute;
+      top: 162.4px;
+      left: 0.3px;
+    }
+    img{
+      width: 280px;
+      height: 110px;
+      position: absolute;
+      left: 10px;
+      top: 10px;
+    }
+    input{
+      position: absolute;
+      top: 480px;
+      background-color: #ff4d4d;
+      border-radius: 5px;
+      padding: 7px;
+    }
+    input:hover{ 
+      padding: 10px;
+    }
+  </style>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <footer>
+  <p style="color: white">&copy; 2020 Donate Red <p>
+  <section id="lab_social_icon_footer">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container">
+        <div class="text-center center-block" align="center">
+                <a href="https://www.facebook.com"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+              <a href="https://twitter.com"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+              <a href="https://plus.google.com"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+              <a href="mailto:#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+    </div>
+</div>
+</section>
+</footer>
+<div class="a1">
+  <img src="map.jpg">
+  <p class="b1">Vijayasri Blood Bank</p>
+  <i class="material-icons" style="font-size:27px">&#xe567;</i>
+  <p class="b2">29-19-27 opp :andhra bank &HDFC bank ATMS, Dornakal Rd, Suryaraopeta, Andhra Pradesh-0866 666 3827 520002</p>
+</div>
+<form>
+<input type="button" name="button" value="Directions" onclick="a()">
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" name="button" value="Directions" onclick="b()">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" name="button" value="Directions" onclick="c()">
+</form>
+
+<div class="a2">
+  <img src="map.jpg">
+  <p class="b1">Chaitanya Blood Bank</p>
+  <i class="material-icons" style="font-size:27px">&#xe567;</i>
+  <p class="b2">1st floor, Vasavya Complex, Benz Cir, Gurunanak Nagar, K P Nagar, Vasavya Nagar, Vijayawada, Andhra Pradesh- 0866 249 7977 520010</p>
+</div>
+<div class="a3">
+  <img src="map.jpg">
+  <p class="b1">Lion Blood Bank</p>
+  <i class="material-icons" style="font-size:27px">&#xe567;</i>
+  <p class="b2">Ramchandrarao Road, Suryaraopeth, Suryaraopeth, Vijayawada, Andhra Pradesh 520002</p>
+</div>
+	
+</body>
+</html>

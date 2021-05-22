@@ -1,0 +1,85 @@
+<html>
+<head>
+  <title>Donate Red</title>
+  	<style>
+  		p.para{
+  			font-family: Arial, Helvetica, sans-serif;
+			font-size: 13px;
+			color: #ff8080;
+			line-height: 2;
+			text-align: center;
+			position: absolute;
+			top: 200px;
+			padding-left: 200px;
+			padding-right: 200px;
+  		}
+  		p.para2{
+  			font-family: Arial, Helvetica, sans-serif;
+			font-size: 13px;
+			color: #ff8080;
+			line-height: 2;
+			text-align: center;
+			position: absolute;
+			top: 330px;
+			padding-left: 200px;
+			padding-right: 200px;
+  		}
+  	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <div class="d1">
+  <link rel="stylesheet" href="stylesdonate.css">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="logo.jpg" style="width:45px;height:60px; position: absolute; left:54px;top:20px;">
+  <a href="home.php"><b>Donate Red</b></a>
+  <div class="dm">
+  <div class="d2" align="center">
+    <br>
+    <a class="a1" href="donors.php" target="_top">Search Donors</a>
+  </div>
+  <div class="d3" align="center">
+    <br>
+    <a class="a2" href="bloodbanks.php">Blood Banks</a>
+  </div>
+  <div class="d4" align="center">
+    <br>
+    <a class="a3" href="add.php">Ad for blood</a>
+  </div>
+  <div class="d5" align="center">
+    <br>
+    <a class="a4" href="donate.php">Donate blood</a>
+  </div>
+  <div class="d6" align="center">
+    <br>
+    <a class="a5" href="Aboutus.php">About us</a>
+  </div>
+  <div class="d7" align="center">
+    <br>
+    <a class="a6" href="Contactus.php">Contact us</a>
+  </div>
+</div>
+  </div>
+  <div class="cal" style="position: absolute;
+  top: 0px;
+  left: 900px;">
+  <p class="call" style="font-family: Arial, Helvetica, sans-serif; font-size:20px;" > &#9743; &nbsp;Emergency:xxxxxxxxx</p>
+  </div>
+</head>
+<body>
+	<p class="para"> DONATE RED this is a web application. This project makes it easy to give information regarding blood type, date of donation of blood, available blood group and ask for blood donation. After the implementation of the project, the blood searching process is expected to be faster, easier, and reliable. Admin(Blood bank) will view the donor side and view the available blood requested by the users. Sometimes donor also need blood so he can ask his required blood group by a post. </p>
+	<p class="para2">User just have to register on this web application. Then he directly get notifications about his blood donation, if anyone need blood donor etc. This things are not happen regularly so we need a web application. Its  enough for to do all this things</p>
+  <footer>
+  <p style="color: white">&copy; 2020 Donate Red <p>
+  <section id="lab_social_icon_footer">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container">
+        <div class="text-center center-block" align="center">
+                <a href="https://www.facebook.com"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+              <a href="https://twitter.com"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+              <a href="https://plus.google.com"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+              <a href="mailto:#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+    </div>
+</div>
+</section>
+</footer>
+</body>
+</html>
